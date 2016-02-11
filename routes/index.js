@@ -7,12 +7,22 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET about page. */
-router.get('/about', function(req, res, next) {
+router.get('#about', function(req, res, next) {
   res.render('index', { title: 'About Me' });
 });
 
+/* GET Services page. */
+router.get('#services', function(req, res, next) {
+  res.render('services', { title: 'Services' });
+});
+
+/* GET Portfolio page. */
+router.get('#portfolio', function(req, res, next) {
+  res.render('portfolio', { title: 'My Portfolio' });
+});
+
 /* GET contact page. */
-router.get('/contact', function(req, res, next) {
+router.get('#contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Me' });
 });
 module.exports = router;

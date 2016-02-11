@@ -1,4 +1,12 @@
+<!-- index.ejs -->
+<!-- Patrick Ross -->
+<!-- Patrick's Portfolio' -->
+<!-- This is the main content of the site, it contains all of the content -->
+
+<!-- includes header.ejs -->
 <% include partials/header.ejs %>
+
+    <!-- This is the home page portion of the website-->
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -10,6 +18,7 @@
         </div>
     </header>
 
+    <!-- this is the about section of the website-->
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -19,10 +28,10 @@
                     <img src="images/mugshot.jpg" class="img-circle" alt="Cinque Terre" width="300" height="300">
                     <hr class="light">
                     <p class="text-faded">I am a second year Computer Programmer Analyst student at Georgian college. I am learning multiple programming
-                        languages from industry professionals so that I am prepared for when I graduate Georgian College
-                        and enter the workforce.</p>
+                        languages from industry professionals so when I graduate from Georgian College I am prepared to enter
+                        the workforce.</p>
                     <hr class="light">
-                    <p class="text-faded">I have worked at K-Line Maintenance and Construction for a Co-op as I.T. Support. While there I assisted
+                    <p class="text-faded">I have worked at K-Line Maintenance and Construction for a Co-op as I.T. Support. While there, I assisted
                         users with any electronic related problem, setting up new phones, accounts, and computers as well
                         as programming in Visual Basic and assisting in developing their website.</p>
                 </div>
@@ -30,6 +39,7 @@
         </div>
     </section>
 
+    <!-- this is the services section of the website-->
     <section id="services">
         <div class="container">
             <div class="row">
@@ -39,6 +49,7 @@
                 </div>
             </div>
         </div>
+        <!-- C# image -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
@@ -48,6 +59,7 @@
                         <p class="text-muted">I have experience developing applications with C Sharp.</p>
                     </div>
                 </div>
+                <!-- mysql image -->
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="images/services/mysql.jpg" class="img-circle" alt="Cinque Terre" width="200" height="200">
@@ -55,6 +67,7 @@
                         <p class="text-muted">I have experience in creating and manipulating MySQL databases.</p>
                     </div>
                 </div>
+                <!-- javascript image -->
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="images/services/javascript.png" class="img-circle" alt="Cinque Terre" width="200" height="200">
@@ -62,6 +75,7 @@
                         <p class="text-muted">I have experience developing with Javascript.</p>
                     </div>
                 </div>
+                <!-- html image-->
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="images/services/html.png" class="img-circle" alt="Cinque Terre" width="200" height="200">
@@ -72,10 +86,11 @@
             </div>
         </div>
     </section>
-
+    <!-- This is the projects section of the website-->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
+                <!-- link to all sport sewing project -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://gc200307049.computerstudi.es/AllSportSewing/default.php?id=7" class="portfolio-box">
                         <img src="images/projects/allsporthomepage.jpg" class="img-responsive" alt="">
@@ -91,7 +106,7 @@
                         </div>
                     </a>
                 </div>
-
+                <!-- link to oblivion movie poster project-->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://gc200307049.computerstudi.es/Oblivion/index.html" class="portfolio-box">
                         <img src="images/projects/oblivion.jpg" class="img-responsive" alt="">
@@ -107,7 +122,7 @@
                         </div>
                     </a>
                 </div>
-
+                <!-- link to an inclass assignment-->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://gc200307049.computerstudi.es/lastclass/login.php" class="portfolio-box">
                         <img src="images/projects/lastclass.jpg" class="img-responsive" alt="">
@@ -123,6 +138,7 @@
                         </div>
                     </a>
                 </div>
+                <!-- link to marlboro website project-->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://gc200307049.computerstudi.es/Marlboro/index.html" class="portfolio-box">
                         <img src="images/projects/Marlboro.jpg" class="img-responsive" alt="">
@@ -138,7 +154,7 @@
                         </div>
                     </a>
                 </div>
-
+                <!-- link to MEAN stack portfolio inclass-->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://patrickrosscomp2068lab03.azurewebsites.net/" class="portfolio-box">
                         <img src="images/projects/portfoliotest.jpg" class="img-responsive" alt="">
@@ -154,7 +170,7 @@
                         </div>
                     </a>
                 </div>
-
+                <!-- link to registration form-->
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://gc200307049.computerstudi.es/lesson8php/register.php" class="portfolio-box">
                         <img src="images/projects/register.jpg" class="img-responsive" alt="">
@@ -170,37 +186,10 @@
                         </div>
                     </a>
                 </div>
-
-
-
             </div>
         </div>
     </section>
-
-    <aside class="bg-dark">
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Contact me!</h2>
-                        <hr class="primary">
-
-                        <p>Want to collaborate? Ask me about what I do? Go on long walks on the beach? Contact me though one
-                            of the methods bellow and I'll get back to you as soon as possible!</p>
-
-                        <hr class="primary">
-
-                    </div>
-                    <% include contact.ejs %>
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                        <p>1-705-309-1027</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-linkedin-square fa-3x"></i>
-                        <p><a href="https://www.linkedin.com/in/patrick-ross-75271a106?trk=hp-identity-name">Check me out on Linkedin!</a></p>
-                </div>
-            </div>
-        </section>
-    </aside>
-    <% include partials/footer.ejs %>
+    <!-- includes the contact form-->
+    <% include contact.ejs %>
+        <!-- includes the footer-->
+        <% include partials/footer.ejs %>
